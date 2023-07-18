@@ -1,0 +1,43 @@
+{
+  "name": "pure-full-page",
+  "version": "2.0.1",
+  "description": "Full page scroll developed by pure JavaScript",
+  "keywords": [
+    "full page scroll",
+    "ES6"
+  ],
+  "main": "./lib/pureFullPage.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp watch",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaogliu/pure_full_page.git"
+  },
+  "author": "Liu Xiaoguang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiaogliu/pure_full_page/issues"
+  },
+  "homepage": "https://github.com/xiaogliu/pure_full_page#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/register": "^7.16.5",
+    "eslint-config-airbnb": "^19.0.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "prettier": "^2.5.1",
+    "sass": "^1.45.0"
+  }
+}

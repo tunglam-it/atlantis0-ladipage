@@ -1,3 +1,43 @@
+.fade-in {
+    opacity: 0;
+    animation: fade-in 0.5s ease-out forwards;
+}
+.fade-left{
+    opacity: 0;
+    animation: fade-left 0.5s ease-in forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fade-left {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.animation-fadein{
+    animation-name: fade-in;
+    animation-delay: 0s;
+    animation-duration: 1.5s;
+}
+.animation-fadeleft{
+    animation-name: fade-left;
+    animation-delay: 0s;
+    animation-duration: 1.5s;
+}
+
 @font-face {
     font-family: Lato;
     src: url(./assets/Lato/Lato-Regular.ttf);
@@ -59,6 +99,7 @@ body {
     background-size: cover;
     min-height: 100vh;
     position: relative;
+    box-sizing: border-box;
 }
 
 .content {
@@ -111,6 +152,7 @@ body {
     background-size: cover;
     min-height: 100vh;
     position: relative;
+    box-sizing: border-box;
 }
 
 #intro .d-inline-block {
@@ -235,6 +277,7 @@ body {
 
 .intro2 {
     min-height: 100vh;
+    transition: opacity 0.5s ease-out;
 }
 
 .content-title-bg {
@@ -290,6 +333,7 @@ body {
     min-height: 100vh;
     position: relative;
     transition: all 0.3s;
+    box-sizing: border-box;
 }
 
 .content-token {
@@ -355,6 +399,7 @@ body {
     background-size: cover;
     min-height: 100vh;
     position: relative;
+    box-sizing: border-box;
 }
 
 .content-roadmap {
@@ -538,6 +583,7 @@ body {
     background-size: cover;
     min-height: 100vh;
     position: relative;
+    box-sizing: border-box;
 }
 
 .content-team {
@@ -549,7 +595,7 @@ body {
 }
 
 .content-text {
-    width: 540px;
+    width: 480px;
 }
 
 .group-text {
@@ -626,6 +672,7 @@ body {
     background-size: cover;
     min-height: 100vh;
     position: relative;
+    box-sizing: border-box;
 }
 
 .partner-item-des {
@@ -768,6 +815,7 @@ body {
     background-size: cover;
     min-height: 100vh;
     position: relative;
+    box-sizing: border-box;
 }
 
 .text-stroke {
@@ -1084,7 +1132,6 @@ form .form-group button {
     #team .intro .content-team,
     #token .intro .content-token {
         padding-top: 80px;
-        -ms-flex-line-pack: start;
         align-content: flex-start;
     }
 
@@ -1146,9 +1193,6 @@ form .form-group button {
         display: none;
     }
 
-    #roadmap .content-raodmap .list-roadmap .item-roadmap .item-roadmap-content:hover .item-time {
-        content: #00ffff;
-    }
     #roadmap .content-raodmap .list-roadmap .item-roadmap:before {
         background: #00ffff;
         width: 1px;
@@ -1337,7 +1381,7 @@ form .form-group button {
     }
 
     #roadmap .content-roadmap .list-roadmap .item-roadmap.active .item-roadmap-content .item-time {
-        color: #fca51e;
+        color: black;
     }
 
     #roadmap .content-roadmap .list-roadmap .item-roadmap .line-left {
@@ -1692,7 +1736,7 @@ form .form-group button {
         width: 16.66%;
     }
     .group-text{
-        max-width: 360px;
+        max-width: 380px;
         margin: 0;
     }
 }
